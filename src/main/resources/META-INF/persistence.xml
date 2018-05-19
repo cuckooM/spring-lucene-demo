@@ -41,6 +41,8 @@
 			    value="org.hibernate.cache.ehcache.EhCacheRegionFactory" />
 			<property name="hibernate.generate_statistics" value="true" />
 			
+			<property name="hibernate.search.default.indexBase" value="C://luceneIndex" />
+			
 		</properties>
 	</persistence-unit>
 </persistence>

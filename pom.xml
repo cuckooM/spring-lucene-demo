@@ -49,11 +49,11 @@
       <version>${version-springframework}</version>
     </dependency>
     <!-- 核心工具包 -->
-    <dependency>
+    <!-- <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>${version-springframework}</version>
-    </dependency>
+    </dependency> -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
@@ -73,17 +73,17 @@
       <artifactId>spring-context-support</artifactId>
       <version>${version-springframework}</version>
     </dependency>
-    <dependency>
+    <!-- <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
       <version>${version-springframework}</version>
-    </dependency>
+    </dependency> -->
     <!-- springIoC（依赖注入）的基础实现 -->
-    <dependency>
+    <!-- <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
       <version>${version-springframework}</version>
-    </dependency>
+    </dependency> -->
     <!-- Spring事务支持 -->
     <dependency>
       <groupId>org.springframework</groupId>
@@ -131,6 +131,37 @@
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-ehcache</artifactId>
       <version>${version-hibernate}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-search-orm</artifactId>
+      <version>4.5.3.Final</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-memory</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-misc</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-phonetic</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-spatial</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-spellchecker</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-grouping</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!-- Spring data jpa -->
