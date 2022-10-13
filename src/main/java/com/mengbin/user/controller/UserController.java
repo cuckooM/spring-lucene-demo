@@ -24,7 +24,12 @@ public class UserController {
 	/** 用户业务逻辑层对象 */
     @Autowired
     private UserService userService;
-    
+
+    /**
+     * 登录
+     * @param loginName 用户名
+     * @return 结果
+     */
     @SuppressWarnings("rawtypes")
 	@RequestMapping(value = "/login", method = {RequestMethod.GET, RequestMethod.POST}, 
     	produces = "text/html;charset=UTF-8")
