@@ -41,7 +41,6 @@ public class UserController {
             Map<String, Object> loginInfo = new HashMap<>();
             loginInfo.put("userId", user.getId());
         	sessionId = "123";
-        	System.out.println("sessionID"+sessionId);
         }
         return new ResponseEntity(HttpStatus.OK);
     }
